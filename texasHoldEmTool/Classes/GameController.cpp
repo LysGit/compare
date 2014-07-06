@@ -25,6 +25,8 @@ bool GameController::init()
         return false;
     }
     
+    this->DATA_init();
+    
     this->loadJsonFile();
     
     std::thread t1(&GameController::startLoad,this);
@@ -74,6 +76,12 @@ void GameController::loadJsonFile(){
         btn->addTouchEventListener( CC_CALLBACK_2(GameController::selectEvent_choose, this) );
     }
     
+    for (int idx = 0; idx < 5; idx++) {
+        std::string s = StringUtils::format("poker_%d", idx+100) ;
+        _choose_button[ idx ] = static_cast<Button*>(_panel_choose->getChildByName( s.c_str() ));
+        
+        _choose_button[ idx ]->setTag( 999 );
+    }
 }
 
 void GameController::startLoad(){
@@ -81,6 +89,11 @@ void GameController::startLoad(){
 }
 void GameController::endLoad(){
     CCLOG("关闭等待动画");
+}
+
+#pragma mark - Data init
+void GameController::DATA_init(){
+    _iTouchIdx = 0;
 }
 
 #pragma mark - Action set
@@ -121,14 +134,9 @@ void GameController::selectEvent_choose(Ref *pSender, Widget::TouchEventType typ
     
     if ( TOUCH_EVENT_BEGAN == (int)type) {
         
-        CCLOG("啊哦");
-        
         Button *btn = (Button *)pSender;
-        CCLOG("%s", btn->getName().c_str() );
-        
         std::string s = btn->getName();
         int tag = atoi( s.substr( s.find('_')+1, s.size() ).c_str() );
-        
         switch ( tag ) {
             case 0:
             {
@@ -137,6 +145,33 @@ void GameController::selectEvent_choose(Ref *pSender, Widget::TouchEventType typ
                 break;
                 
             default:
+            {
+                if ( tag >= 100) {
+                    _iTouchIdx = tag - 100;
+                    
+                    if ( _choose_button[ _iTouchIdx ]->getTag() != 999) {
+
+                        std::string s2 = StringUtils::format("poker_%d", _choose_button[ _iTouchIdx ]->getTag()) ;
+                        Button *btn1 = (Button *)_panel_choose->getChildByName( s2.c_str() );
+                        btn1->setBright( true );
+                        
+                        _choose_button[ _iTouchIdx ]->setVisible( true );
+                        _choose_button[ _iTouchIdx ]->loadTextures( "poker70.png", "","",  TextureResType::PLIST);
+                        _choose_button[ _iTouchIdx ]->setTag( 999 );
+                    }
+                }else{
+                    if ( _iTouchIdx > 4) {
+                        return;
+                    }
+                    
+                    btn->setBright( false );
+                    
+                    std::string s1 = StringUtils::format("poker%d.png", tag) ;
+                    _choose_button[ _iTouchIdx ]->loadTextures( s1.c_str(), "poker70.png", "", TextureResType::PLIST);
+                    _choose_button[ _iTouchIdx ]->setTag( tag );
+                    _iTouchIdx++;
+                }
+            }
                 break;
         }
     }
@@ -146,30 +181,36 @@ void GameController::selectEvent_choose(Ref *pSender, Widget::TouchEventType typ
 void GameController::selectEvent_play(Ref *pSender, Widget::TouchEventType type){
     
     if ( TOUCH_EVENT_BEGAN == (int)type) {
+        
+        _iTouchIdx = 0;
         _panel_choose->setVisible( true );
 
+        Button *btn = (Button *)pSender;
+        std::string s = btn->getName();
+        int tag = atoi( s.substr( s.find('_')+1, s.size() ).c_str() );
+        int iNum = 10==tag?5:2;
+        
         //动画
-        Button *button[5];
         Point pt[5];
-        
         for (int idx = 0; idx < 5; idx++) {
+            pt[ idx ] = _choose_button[ idx ]->getPosition();
+
+            if ( idx < iNum ) {
+                _choose_button[ idx ]->setVisible( true );
+            }else{
+                _choose_button[ idx ]->setVisible( false );
+            }
             
-            std::string s = StringUtils::format("poker_%d", idx+100) ;
-            
-            CCLOG("===%s", s.c_str() );
-            
-            button[ idx ] = static_cast<Button*>(_panel_choose->getChildByName( s.c_str() ));
-            pt[ idx ] = button[ idx ]->getPosition();
+            _choose_button[ idx ]->loadTextures( "poker70.png", "","",  TextureResType::PLIST);
         }
         
-        for (int idx = 0; idx < 5; idx++) {
-            
-            button[ idx ]->setPosition( pt[2] );
-            
-            MoveTo *to = MoveTo::create(2, pt[ idx ] );
-            button[ idx ]->runAction( to );
-        }
-        
+//        for (int idx = 0; idx < 5; idx++) {
+//            
+//            button[ idx ]->setPosition( pt[2] );
+//            
+//            MoveTo *to = MoveTo::create(2, pt[ idx ] );
+//            button[ idx ]->runAction( to );
+//        }
         
     }
 }

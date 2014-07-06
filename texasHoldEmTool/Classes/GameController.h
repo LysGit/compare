@@ -27,6 +27,8 @@ public:
     virtual void loadJsonFile();
     virtual void startLoad();
     virtual void endLoad();
+    
+    virtual void DATA_init();
     //ACT
     void selectEvent_menu(Ref *pSender, Widget::TouchEventType type);
     void selectEvent_choose(Ref *pSender, Widget::TouchEventType type);
@@ -40,6 +42,11 @@ private:
     Layout *_panel_explain;
 //    Layout *_panel_menu;
     Layout *_panel_teach;
+    
+    Button *_choose_button[5];
+    
+    
+    int _iTouchIdx;
 };
 
 #endif /* defined(__texasHoldEmTool__GameController__) */

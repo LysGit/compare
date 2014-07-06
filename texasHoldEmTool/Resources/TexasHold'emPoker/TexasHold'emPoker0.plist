@@ -4,7 +4,7 @@
 	<dict>
 		<key>frames</key>
 		<dict>
-			<key>Imags/bgColor.png</key>
+			<key>bgColor.png</key>
 			<dict>
 				<key>width</key>
 				<integer>700</integer>
@@ -23,7 +23,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Imags/desk.png</key>
+			<key>desk.png</key>
 			<dict>
 				<key>width</key>
 				<integer>608</integer>
@@ -42,7 +42,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker70.png</key>
+			<key>poker70.png</key>
 			<dict>
 				<key>width</key>
 				<integer>72</integer>
@@ -61,7 +61,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Imags/poker.png</key>
+			<key>poker.png</key>
 			<dict>
 				<key>width</key>
 				<integer>64</integer>
@@ -80,7 +80,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Imags/usrBtn.png</key>
+			<key>usrBtn.png</key>
 			<dict>
 				<key>width</key>
 				<integer>100</integer>
@@ -99,7 +99,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Imags/publicBtn.png</key>
+			<key>publicBtn.png</key>
 			<dict>
 				<key>width</key>
 				<integer>400</integer>
@@ -137,7 +137,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Imags/1px.png</key>
+			<key>1px.png</key>
 			<dict>
 				<key>width</key>
 				<integer>1</integer>
@@ -156,7 +156,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker1.png</key>
+			<key>poker1.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -175,7 +175,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker71.png</key>
+			<key>poker1_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -194,7 +194,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker2.png</key>
+			<key>poker2.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -213,7 +213,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker3.png</key>
+			<key>poker2_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -232,7 +232,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker4.png</key>
+			<key>poker3.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -251,7 +251,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker5.png</key>
+			<key>poker3_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -270,7 +270,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker6.png</key>
+			<key>poker4.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -289,7 +289,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker7.png</key>
+			<key>poker4_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -308,7 +308,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker8.png</key>
+			<key>poker5.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -327,7 +327,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker9.png</key>
+			<key>poker5_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -346,7 +346,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker10.png</key>
+			<key>poker6.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -365,7 +365,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker11.png</key>
+			<key>poker6_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -384,7 +384,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker12.png</key>
+			<key>poker7.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -403,7 +403,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker13.png</key>
+			<key>poker7_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -422,7 +422,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker17.png</key>
+			<key>poker8.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -441,7 +441,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker18.png</key>
+			<key>poker8_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -460,7 +460,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker19.png</key>
+			<key>poker9.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -479,7 +479,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker20.png</key>
+			<key>poker9_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -498,7 +498,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker21.png</key>
+			<key>poker10.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -517,7 +517,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker22.png</key>
+			<key>poker10_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -536,7 +536,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker23.png</key>
+			<key>poker11.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -555,7 +555,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker24.png</key>
+			<key>poker11_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -574,7 +574,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker25.png</key>
+			<key>poker12.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -593,7 +593,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker26.png</key>
+			<key>poker12_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -612,7 +612,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker27.png</key>
+			<key>poker13.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -631,7 +631,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker28.png</key>
+			<key>poker13_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -650,7 +650,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker29.png</key>
+			<key>poker17.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -669,7 +669,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker33.png</key>
+			<key>poker17_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -688,7 +688,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker34.png</key>
+			<key>poker18.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -707,7 +707,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker35.png</key>
+			<key>poker18_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -726,7 +726,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker36.png</key>
+			<key>poker19.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -745,7 +745,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker37.png</key>
+			<key>poker19_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -764,7 +764,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker38.png</key>
+			<key>poker20.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -783,7 +783,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker39.png</key>
+			<key>poker20_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -802,7 +802,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker40.png</key>
+			<key>poker21.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -821,7 +821,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker41.png</key>
+			<key>poker21_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -840,7 +840,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker42.png</key>
+			<key>poker22.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -859,7 +859,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker43.png</key>
+			<key>poker22_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -878,7 +878,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker44.png</key>
+			<key>poker23.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -897,7 +897,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker45.png</key>
+			<key>poker23_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -916,7 +916,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker49.png</key>
+			<key>poker24.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -935,7 +935,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker50.png</key>
+			<key>poker24_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -954,7 +954,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker51.png</key>
+			<key>poker25.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -973,7 +973,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker52.png</key>
+			<key>poker25_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -992,7 +992,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker53.png</key>
+			<key>poker26.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1011,7 +1011,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker54.png</key>
+			<key>poker26_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1030,7 +1030,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker55.png</key>
+			<key>poker27.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1049,7 +1049,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker56.png</key>
+			<key>poker27_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1068,7 +1068,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker57.png</key>
+			<key>poker28.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1087,7 +1087,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker58.png</key>
+			<key>poker28_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1106,7 +1106,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker59.png</key>
+			<key>poker29.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1125,7 +1125,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker60.png</key>
+			<key>poker29_gray.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1144,7 +1144,7 @@
 				<key>offsetY</key>
 				<real>0</real>
 			</dict>
-			<key>Poker/poker61.png</key>
+			<key>poker33.png</key>
 			<dict>
 				<key>width</key>
 				<integer>74</integer>
@@ -1158,6 +1158,975 @@
 				<integer>532</integer>
 				<key>y</key>
 				<integer>1292</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker33_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>608</integer>
+				<key>y</key>
+				<integer>1292</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker34.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>684</integer>
+				<key>y</key>
+				<integer>1292</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker34_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>760</integer>
+				<key>y</key>
+				<integer>1292</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker35.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>836</integer>
+				<key>y</key>
+				<integer>1292</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker35_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>912</integer>
+				<key>y</key>
+				<integer>1292</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker36.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker36_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>76</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker37.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>152</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker37_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>228</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker38.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>304</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker38_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>380</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker39.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>456</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker39_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>532</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker40.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>608</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker40_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>684</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker41.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>760</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker41_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>836</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker42.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>912</integer>
+				<key>y</key>
+				<integer>1394</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker42_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker43.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>76</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker43_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>152</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker44.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>228</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker44_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>304</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker45.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>380</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker45_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>456</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker49.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>532</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker49_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>608</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker50.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>684</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker50_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>760</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker51.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>836</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker51_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>912</integer>
+				<key>y</key>
+				<integer>1496</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker52.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker52_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>76</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker53.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>152</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker53_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>228</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker54.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>304</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker54_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>380</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker55.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>456</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker55_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>532</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker56.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>608</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker56_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>684</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker57.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>760</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker57_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>836</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker58.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>912</integer>
+				<key>y</key>
+				<integer>1598</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker58_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>0</integer>
+				<key>y</key>
+				<integer>1700</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker59.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>76</integer>
+				<key>y</key>
+				<integer>1700</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker59_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>152</integer>
+				<key>y</key>
+				<integer>1700</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker60.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>228</integer>
+				<key>y</key>
+				<integer>1700</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker60_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>304</integer>
+				<key>y</key>
+				<integer>1700</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker61.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>380</integer>
+				<key>y</key>
+				<integer>1700</integer>
+				<key>offsetX</key>
+				<real>0</real>
+				<key>offsetY</key>
+				<real>0</real>
+			</dict>
+			<key>poker61_gray.png</key>
+			<dict>
+				<key>width</key>
+				<integer>74</integer>
+				<key>height</key>
+				<integer>100</integer>
+				<key>originalWidth</key>
+				<integer>74</integer>
+				<key>originalHeight</key>
+				<integer>100</integer>
+				<key>x</key>
+				<integer>456</integer>
+				<key>y</key>
+				<integer>1700</integer>
 				<key>offsetX</key>
 				<real>0</real>
 				<key>offsetY</key>
