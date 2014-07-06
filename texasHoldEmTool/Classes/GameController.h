@@ -25,15 +25,20 @@ public:
     CREATE_FUNC( GameController );
     
     virtual void loadJsonFile();
+    virtual void startLoad();
+    virtual void endLoad();
     //ACT
-    void selectEvent(Ref *pSender, Widget::TouchEventType type);
-    
+    void selectEvent_menu(Ref *pSender, Widget::TouchEventType type);
+    void selectEvent_choose(Ref *pSender, Widget::TouchEventType type);
+    void selectEvent_play(Ref *pSender, Widget::TouchEventType type);
+
 private:
     Layout *_panel_info;
     Layout *_panel_play;
     Layout *_panel_choose;
     Layout *_panel_help;
     Layout *_panel_explain;
+//    Layout *_panel_menu;
     Layout *_panel_teach;
 };
 

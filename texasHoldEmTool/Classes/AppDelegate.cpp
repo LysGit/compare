@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "GameController.h"
+#include "GameData.h"
 
 USING_NS_CC;
 
@@ -21,11 +22,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
     
     // turn on display FPS
-    director->setDisplayStats(true);
+    director->setDisplayStats( false );
     
     //------------------  shipei -------
     Size screenSize = glview->getFrameSize();
-    Size designSize = Size(640, 1136);
+    Size designSize = Size(1136, 640);
     
     FileUtils* pFileUtils = CCFileUtils::getInstance();
     std::vector<std::string> searchPaths;
@@ -33,23 +34,36 @@ bool AppDelegate::applicationDidFinishLaunching() {
     if ( Platform::OS_IPAD == this->getTargetPlatform() ) {
         designSize = Size(1024, 768);
         searchPaths.push_back("iPad");
+        
+        memcpy( sysPlatform, "iPad", sizeof(char)*strlen("iPad") );
+        
     }else if ( Platform::OS_IPHONE == this->getTargetPlatform() ) {
-        float visibleSizeWidth = 640.f ;
-        float visibleSizeHeight = 960.f ;
+        float visibleSizeWidth = 960.f;
+        float visibleSizeHeight =  640.f;
 
         if ( visibleSizeWidth/visibleSizeHeight ==  screenSize.width/screenSize.height ) {
-            designSize = Size(640, 960);
+            designSize = Size(960, 640);
             searchPaths.push_back("iPhone4");
+            
+            memcpy( sysPlatform, "iPhone4", sizeof(char)*strlen("iPhone4") );
+            
         }else{
-            designSize = Size(640, 1136);
+            designSize = Size(1136 , 640);
             searchPaths.push_back("iPhone5");
+            
+            memcpy( sysPlatform, "iPhone5", sizeof(char)*strlen("iPhone5") );
         }
     }else{
-        designSize = Size(480, 800);
+        designSize = Size(800 , 480);
         searchPaths.push_back("Android");
+        
+        memcpy( sysPlatform, "Android", sizeof(char)*strlen("Android") );
     }
     
-//    searchPaths.push_back("Particle");
+    
+    CCLOG("sysPlatform:%s", sysPlatform);
+    
+    searchPaths.push_back("TexasHold'emPoker");
     
     
     pFileUtils->setSearchPaths(searchPaths);
