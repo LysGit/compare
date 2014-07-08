@@ -24,11 +24,22 @@ public:
     virtual bool init();
     CREATE_FUNC( GameController );
     
-    virtual void loadJsonFile();
-    virtual void startLoad();
-    virtual void endLoad();
+
     
-    virtual void DATA_init();
+    //DATA - set
+    void DATA_init();
+    void DATA_calculate();
+    
+    //UI - init
+    void loadJsonFile();
+    void startLoad();
+    void endLoad();
+    
+    //UI - update
+    void UI_updateInfo();
+    void UI_updateInfo(int idx);
+    
+
     //ACT
     void selectEvent_menu(Ref *pSender, Widget::TouchEventType type);
     void selectEvent_choose(Ref *pSender, Widget::TouchEventType type);
@@ -46,7 +57,12 @@ private:
     Button *_choose_button[5];
     
     
-    int _iTouchIdx;
+    int _iSelectIdx;
+    int _iUserIdx;
+    int _iMax;
+    unsigned char _ucCard[11][5];
+    bool _bCalculate;
+    int _maxIdx[4];
 };
 
 #endif /* defined(__texasHoldEmTool__GameController__) */

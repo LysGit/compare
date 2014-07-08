@@ -60,14 +60,24 @@
 		50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF629517ECD46A001EB2F8 /* Icon-100.png */; };
 		50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A017ECD613001EB2F8 /* Icon-29.png */; };
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
-		A0B4D3A91967A99600556868 /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3A61967A99600556868 /* iPad */; };
-		A0B4D3AA1967A99600556868 /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3A61967A99600556868 /* iPad */; };
-		A0B4D3AB1967A99600556868 /* iPhone4 in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3A71967A99600556868 /* iPhone4 */; };
-		A0B4D3AC1967A99600556868 /* iPhone4 in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3A71967A99600556868 /* iPhone4 */; };
-		A0B4D3AD1967A99600556868 /* iPhone5 in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3A81967A99600556868 /* iPhone5 */; };
-		A0B4D3AE1967A99600556868 /* iPhone5 in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3A81967A99600556868 /* iPhone5 */; };
-		A0B4D3B41967ACE600556868 /* Android in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3B31967ACE600556868 /* Android */; };
-		A0B4D3B51967ACE600556868 /* Android in Resources */ = {isa = PBXBuildFile; fileRef = A0B4D3B31967ACE600556868 /* Android */; };
+		A06BE85C196BE617000A5E5D /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE855196BE617000A5E5D /* GameData.cpp */; };
+		A06BE85D196BE617000A5E5D /* GameData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE855196BE617000A5E5D /* GameData.cpp */; };
+		A06BE85E196BE617000A5E5D /* PokerEvaluation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE858196BE617000A5E5D /* PokerEvaluation.cpp */; };
+		A06BE85F196BE617000A5E5D /* PokerEvaluation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE858196BE617000A5E5D /* PokerEvaluation.cpp */; };
+		A06BE860196BE617000A5E5D /* PokerEvaluationEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE85A196BE617000A5E5D /* PokerEvaluationEx.cpp */; };
+		A06BE861196BE617000A5E5D /* PokerEvaluationEx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A06BE85A196BE617000A5E5D /* PokerEvaluationEx.cpp */; };
+		A06BE87C196BE631000A5E5D /* Android in Resources */ = {isa = PBXBuildFile; fileRef = A06BE876196BE631000A5E5D /* Android */; };
+		A06BE87D196BE631000A5E5D /* Android in Resources */ = {isa = PBXBuildFile; fileRef = A06BE876196BE631000A5E5D /* Android */; };
+		A06BE87E196BE631000A5E5D /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = A06BE877196BE631000A5E5D /* iPad */; };
+		A06BE87F196BE631000A5E5D /* iPad in Resources */ = {isa = PBXBuildFile; fileRef = A06BE877196BE631000A5E5D /* iPad */; };
+		A06BE880196BE631000A5E5D /* iPhone4 in Resources */ = {isa = PBXBuildFile; fileRef = A06BE878196BE631000A5E5D /* iPhone4 */; };
+		A06BE881196BE631000A5E5D /* iPhone4 in Resources */ = {isa = PBXBuildFile; fileRef = A06BE878196BE631000A5E5D /* iPhone4 */; };
+		A06BE882196BE631000A5E5D /* iPhone5 in Resources */ = {isa = PBXBuildFile; fileRef = A06BE879196BE631000A5E5D /* iPhone5 */; };
+		A06BE883196BE631000A5E5D /* iPhone5 in Resources */ = {isa = PBXBuildFile; fileRef = A06BE879196BE631000A5E5D /* iPhone5 */; };
+		A06BE884196BE631000A5E5D /* LoadingAnimation in Resources */ = {isa = PBXBuildFile; fileRef = A06BE87A196BE631000A5E5D /* LoadingAnimation */; };
+		A06BE885196BE631000A5E5D /* LoadingAnimation in Resources */ = {isa = PBXBuildFile; fileRef = A06BE87A196BE631000A5E5D /* LoadingAnimation */; };
+		A06BE886196BE631000A5E5D /* TexasHold'emPoker in Resources */ = {isa = PBXBuildFile; fileRef = A06BE87B196BE631000A5E5D /* TexasHold'emPoker */; };
+		A06BE887196BE631000A5E5D /* TexasHold'emPoker in Resources */ = {isa = PBXBuildFile; fileRef = A06BE87B196BE631000A5E5D /* TexasHold'emPoker */; };
 		A0B4D3B81967B52F00556868 /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0B4D3B61967B52F00556868 /* GameController.cpp */; };
 		A0B4D3B91967B52F00556868 /* GameController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0B4D3B61967B52F00556868 /* GameController.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
@@ -266,10 +276,18 @@
 		50EF629517ECD46A001EB2F8 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
 		50EF62A017ECD613001EB2F8 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
 		50EF62A117ECD613001EB2F8 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
-		A0B4D3A61967A99600556868 /* iPad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPad; sourceTree = "<group>"; };
-		A0B4D3A71967A99600556868 /* iPhone4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPhone4; sourceTree = "<group>"; };
-		A0B4D3A81967A99600556868 /* iPhone5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPhone5; sourceTree = "<group>"; };
-		A0B4D3B31967ACE600556868 /* Android */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Android; sourceTree = "<group>"; };
+		A06BE855196BE617000A5E5D /* GameData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameData.cpp; path = ../Classes/GameData.cpp; sourceTree = "<group>"; };
+		A06BE856196BE617000A5E5D /* GameData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameData.h; path = ../Classes/GameData.h; sourceTree = "<group>"; };
+		A06BE858196BE617000A5E5D /* PokerEvaluation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PokerEvaluation.cpp; sourceTree = "<group>"; };
+		A06BE859196BE617000A5E5D /* PokerEvaluation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokerEvaluation.h; sourceTree = "<group>"; };
+		A06BE85A196BE617000A5E5D /* PokerEvaluationEx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PokerEvaluationEx.cpp; sourceTree = "<group>"; };
+		A06BE85B196BE617000A5E5D /* PokerEvaluationEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokerEvaluationEx.h; sourceTree = "<group>"; };
+		A06BE876196BE631000A5E5D /* Android */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Android; sourceTree = "<group>"; };
+		A06BE877196BE631000A5E5D /* iPad */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPad; sourceTree = "<group>"; };
+		A06BE878196BE631000A5E5D /* iPhone4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPhone4; sourceTree = "<group>"; };
+		A06BE879196BE631000A5E5D /* iPhone5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPhone5; sourceTree = "<group>"; };
+		A06BE87A196BE631000A5E5D /* LoadingAnimation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LoadingAnimation; sourceTree = "<group>"; };
+		A06BE87B196BE631000A5E5D /* TexasHold'emPoker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "TexasHold'emPoker"; sourceTree = "<group>"; };
 		A0B4D3B61967B52F00556868 /* GameController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameController.cpp; path = ../Classes/GameController.cpp; sourceTree = "<group>"; };
 		A0B4D3B71967B52F00556868 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameController.h; path = ../Classes/GameController.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -348,6 +366,9 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A06BE857196BE617000A5E5D /* pokerstove */,
+				A06BE855196BE617000A5E5D /* GameData.cpp */,
+				A06BE856196BE617000A5E5D /* GameData.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				A0B4D3B61967B52F00556868 /* GameController.cpp */,
@@ -467,16 +488,30 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A0B4D3B31967ACE600556868 /* Android */,
-				A0B4D3A61967A99600556868 /* iPad */,
-				A0B4D3A71967A99600556868 /* iPhone4 */,
-				A0B4D3A81967A99600556868 /* iPhone5 */,
+				A06BE876196BE631000A5E5D /* Android */,
+				A06BE877196BE631000A5E5D /* iPad */,
+				A06BE878196BE631000A5E5D /* iPhone4 */,
+				A06BE879196BE631000A5E5D /* iPhone5 */,
+				A06BE87A196BE631000A5E5D /* LoadingAnimation */,
+				A06BE87B196BE631000A5E5D /* TexasHold'emPoker */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		A06BE857196BE617000A5E5D /* pokerstove */ = {
+			isa = PBXGroup;
+			children = (
+				A06BE858196BE617000A5E5D /* PokerEvaluation.cpp */,
+				A06BE859196BE617000A5E5D /* PokerEvaluation.h */,
+				A06BE85A196BE617000A5E5D /* PokerEvaluationEx.cpp */,
+				A06BE85B196BE617000A5E5D /* PokerEvaluationEx.h */,
+			);
+			name = pokerstove;
+			path = ../Classes/pokerstove;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -647,24 +682,26 @@
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
+				A06BE87C196BE631000A5E5D /* Android in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
+				A06BE884196BE631000A5E5D /* LoadingAnimation in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
-				A0B4D3AD1967A99600556868 /* iPhone5 in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				A06BE880196BE631000A5E5D /* iPhone4 in Resources */,
+				A06BE882196BE631000A5E5D /* iPhone5 in Resources */,
+				A06BE87E196BE631000A5E5D /* iPad in Resources */,
+				A06BE886196BE631000A5E5D /* TexasHold'emPoker in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
-				A0B4D3B41967ACE600556868 /* Android in Resources */,
-				A0B4D3AB1967A99600556868 /* iPhone4 in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
-				A0B4D3A91967A99600556868 /* iPad in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,14 +710,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B4D3B51967ACE600556868 /* Android in Resources */,
-				A0B4D3AC1967A99600556868 /* iPhone4 in Resources */,
-				A0B4D3AE1967A99600556868 /* iPhone5 in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
-				A0B4D3AA1967A99600556868 /* iPad in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
+				A06BE87F196BE631000A5E5D /* iPad in Resources */,
+				A06BE881196BE631000A5E5D /* iPhone4 in Resources */,
+				A06BE885196BE631000A5E5D /* LoadingAnimation in Resources */,
+				A06BE87D196BE631000A5E5D /* Android in Resources */,
+				A06BE883196BE631000A5E5D /* iPhone5 in Resources */,
+				A06BE887196BE631000A5E5D /* TexasHold'emPoker in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,8 +730,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06BE85E196BE617000A5E5D /* PokerEvaluation.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				A06BE85C196BE617000A5E5D /* GameData.cpp in Sources */,
 				A0B4D3B81967B52F00556868 /* GameController.cpp in Sources */,
+				A06BE860196BE617000A5E5D /* PokerEvaluationEx.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -703,8 +745,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06BE85F196BE617000A5E5D /* PokerEvaluation.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
+				A06BE85D196BE617000A5E5D /* GameData.cpp in Sources */,
 				A0B4D3B91967B52F00556868 /* GameController.cpp in Sources */,
+				A06BE861196BE617000A5E5D /* PokerEvaluationEx.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

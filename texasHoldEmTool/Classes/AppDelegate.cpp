@@ -64,6 +64,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     CCLOG("sysPlatform:%s", sysPlatform);
     
     searchPaths.push_back("TexasHold'emPoker");
+    searchPaths.push_back("LoadingAnimation");
     
 //    SpriteFrameCache::getInstance()->addSpriteFramesWithFile( "TexasHold'emPoker0.plist" );
     
@@ -112,7 +113,7 @@ void AppDelegate::loadResources(){
     CCLOG("加载资源文件...");
     
     //添加图片缓存
-//    SpriteFrameCache::getInstance()->addSpriteFramesWithFile( "TexasHold'emPoker/TexasHold'emPoker0.plist" );
+//    SpriteFrameCache::getInstance()->addSpriteFramesWithFile( "TexasHold'emPoker0.plist" );
     
 //    CocosDenshion::SimpleAudioEngine::getInstance()->preloadEffect( "Explo.mp3" );
 //    CocosDenshion::SimpleAudioEngine::getInstance()->preloadEffect( "rush.mp3" );
