@@ -46,7 +46,6 @@ void GameController::loadJsonFile(){
     str += ".ExportJson";
     Layout* widget = (Layout*)GUIReader::getInstance()->widgetFromJsonFile( str.c_str() );
     this->addChild( widget );
-    widget->setBackGroundImage( "bg.jpg" );
     
     _panel_info  = static_cast<Layout*>(widget->getChildByName( "Panel_info" ));
     _panel_play  = static_cast<Layout*>(widget->getChildByName( "Panel_play" ));
@@ -137,9 +136,32 @@ void GameController::DATA_calculate(){
     }
     
     PokerEvaluationEx::maxIdx_Evaluation(handCardData, curCenterCardData, iPlays, iJoinNum, _maxIdx);
+    
+    for ( int idx = 0; idx < 10; idx++) {
+        CCLOG("%d", _maxIdx[idx] );
+    }
+    
     _bCalculate = true;
 }
 
+bool GameController::DATA_check(int tag){
+    
+    if ( tag == 0 || tag == 70) {
+        return false;
+    }
+    
+    for (int i = 0; i < 11; i++) {
+        for (int j = 0; j < 5; j++) {
+            
+            if ( _ucCard[ i ][ j ] == tag ) {
+                return true;
+            }
+        }
+    }
+    
+    
+    return false;
+}
 #pragma mark - UI update
 void GameController::UI_updateInfo(){
     
@@ -157,6 +179,21 @@ void GameController::UI_updateInfo(int iUser){
         std::string s1 = StringUtils::format("poker%d.png", _ucCard[ iUser ][ idx] ) ;
         ivPoker->loadTexture( s1 , TextureResType::PLIST);
     }
+    if ( iUser < 10) {
+        std::string s = StringUtils::format("win_%d", iUser) ;
+        ImageView *ivWiner  = static_cast<ImageView*>(_panel_info->getChildByName( s ));
+        
+        int itmp = 0;
+        for (int i = 0; i < 4; i++) {
+            if( _maxIdx[ i ] > 0 && iUser == _maxIdx[ i ] ){
+                itmp = 1;
+                break;
+            }
+        }
+        
+        ivWiner->setVisible( itmp==1?true:false );
+    }
+
 }
 
 #pragma mark - Action set
@@ -190,6 +227,8 @@ void GameController::selectEvent_menu(Ref *pSender, Widget::TouchEventType type)
                 
                 if ( _bCalculate ) {
                     CCLOG("得到答案！");
+                    
+                    
                 }else{
                     CCLOG("提示错误！");
                 }
@@ -209,6 +248,7 @@ void GameController::selectEvent_menu(Ref *pSender, Widget::TouchEventType type)
             default:
             {
                 CCLOG("刷新");
+                Director::getInstance()->replaceScene( GameController::createScene() );
             }
                 break;
         }
@@ -252,6 +292,11 @@ void GameController::selectEvent_choose(Ref *pSender, Widget::TouchEventType typ
                         _ucCard[ _iUserIdx ][ _iSelectIdx ] = 10==_iUserIdx?70:0;
                     }
                 }else{
+                    
+                    if ( DATA_check( tag ) ) {
+                        return;
+                    }
+                    
                     if ( _iSelectIdx >= _iMax) {
                         _iSelectIdx --;
                     }

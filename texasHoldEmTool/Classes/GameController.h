@@ -29,6 +29,7 @@ public:
     //DATA - set
     void DATA_init();
     void DATA_calculate();
+    bool DATA_check(int tag);
     
     //UI - init
     void loadJsonFile();
@@ -39,7 +40,6 @@ public:
     void UI_updateInfo();
     void UI_updateInfo(int idx);
     
-
     //ACT
     void selectEvent_menu(Ref *pSender, Widget::TouchEventType type);
     void selectEvent_choose(Ref *pSender, Widget::TouchEventType type);
