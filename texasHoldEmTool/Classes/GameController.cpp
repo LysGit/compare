@@ -8,9 +8,43 @@
 
 #include "GameController.h"
 #include "GameData.h"
-#include "pokerstove/PokerEvaluationEx.h"
+#include "pokerstove/PokerEvaluation.h"
 
+#include "./C2DXShareSDK/C2DXShareSDK.h"
+
+using namespace cn::sharesdk;
 using namespace cocos2d;
+
+void shareResultHandler(C2DXResponseState state, C2DXPlatType platType, __Dictionary *shareInfo, __Dictionary *error)
+{
+    log("分享回调 State：%d", state);
+    //    shareInfo->~CCObject()
+    switch (state) {
+        case C2DXResponseStateSuccess:
+            log("分享成功");
+            break;
+        case C2DXResponseStateFail:
+            //            CCLog("error_msg: %s, error_code: %s", dynamic_cast<CCString*>(error->objectForKey("error_msg"))->getCString(), dynamic_cast<CCString*>(error->objectForKey("error_code"))->getCString(), NULL);
+            log("分享失败");
+            break;
+        default:
+            log("分享失败 : %d", state);
+            break;
+    }
+}
+void authResultHandler(C2DXResponseState state, C2DXPlatType platType, __Dictionary *error)
+{
+    switch (state) {
+        case C2DXResponseStateSuccess:
+            log("授权成功");
+            break;
+        case C2DXResponseStateFail:
+            log("授权失败");
+            break;
+        default:
+            break;
+    }
+}
 
 Scene* GameController::createScene()
 {
@@ -42,7 +76,7 @@ bool GameController::init()
 void GameController::loadJsonFile(){
     
     std::string str = "TexasHold'emPoker_";
-    str += sysPlatform;
+    str += g_sysPlatform;
     str += ".ExportJson";
     Layout* widget = (Layout*)GUIReader::getInstance()->widgetFromJsonFile( str.c_str() );
     this->addChild( widget );
@@ -79,7 +113,7 @@ void GameController::loadJsonFile(){
     for (int idx = 0; idx < 5; idx++) {
         std::string s = StringUtils::format("poker_%d", idx+100) ;
         _choose_button[ idx ] = static_cast<Button*>(_panel_choose->getChildByName( s ));
-        
+        _choose_button[ idx ]->setPosition( Point(0.5, 0.5) );
         _choose_button[ idx ]->setTag( 999 );
     }
 }
@@ -107,40 +141,24 @@ void GameController::DATA_calculate(){
     _bCalculate = false;
     
     unsigned char curCenterCardData[5] = { 0 };
-    unsigned char handCardData[][2] ={{0}};
-    int iPlays = 0;
-    int iJoinNum = 7;
-    
+    unsigned char handCardData[GAME_PLAYER][2] ;
+
+    for (int idx = 0; idx < GAME_PLAYER; idx++) {
+        
+        handCardData[ idx ][0] = _ucCard[ idx ][0];
+        handCardData[ idx ][1] = _ucCard[ idx ][1];
+    }
+
+    //公共牌
     for (int i = 0; i < 5; i++) {
         if ( _ucCard[10][i] == 70 ) {
             return;
         }
         curCenterCardData[ i ] = _ucCard[10][i];
     }
-    
-    for (int i = 0; i < 10; i++) {
 
-        if ( _ucCard[i][0] != 0 && _ucCard[i][1] != 0) {
-            handCardData[iPlays][0] = _ucCard[i][0];
-            handCardData[iPlays][1] = _ucCard[i][1];
-            iPlays++;
-        }else{
-            if ( (_ucCard[i][0] == 0 && _ucCard[i][1] != 0) || (_ucCard[i][0] != 0 && _ucCard[i][1] == 0) ) {
-                return;
-            }
-        }
-    }
+    PokerEvaluation::maxIdx_Evaluation( handCardData, curCenterCardData, _maxIdx);
 
-    for (int i = 0; i < 4; i++) {
-        _maxIdx[0] = -1;
-    }
-    
-    PokerEvaluationEx::maxIdx_Evaluation(handCardData, curCenterCardData, iPlays, iJoinNum, _maxIdx);
-    
-    for ( int idx = 0; idx < 10; idx++) {
-        CCLOG("%d", _maxIdx[idx] );
-    }
-    
     _bCalculate = true;
 }
 
@@ -193,9 +211,27 @@ void GameController::UI_updateInfo(int iUser){
         
         ivWiner->setVisible( itmp==1?true:false );
     }
-
 }
 
+void GameController::UI_updateWin(){
+    
+    for (int iUser = 0; iUser < 10; iUser++) {
+        
+        std::string s = StringUtils::format("win_%d", iUser) ;
+        ImageView *ivWiner  = static_cast<ImageView*>(_panel_info->getChildByName( s ));
+        
+        int itmp = 0;
+        for (int i = 0; i < 4; i++) {
+            if( _maxIdx[ i ] >= 0 && iUser == _maxIdx[ i ] ){
+                itmp = 1;
+                break;
+            }
+        }
+        
+        ivWiner->setVisible( itmp==1?true:false );
+    }
+    
+}
 #pragma mark - Action set
 void GameController::selectEvent_menu(Ref *pSender, Widget::TouchEventType type){
     
@@ -208,7 +244,11 @@ void GameController::selectEvent_menu(Ref *pSender, Widget::TouchEventType type)
             {
                 CCLOG("帮助");
                 //添加进度条 -- 需要添加一个层，有灰度
-                
+            }
+                break;
+            case 11:
+            {
+                CCLOG("说明");
                 ArmatureDataManager::getInstance()->addArmatureFileInfo("LoadingAnimation.ExportJson");
                 Armature* armature = Armature::create("LoadingAnimation");
                 armature->setTag( 10086 );
@@ -227,22 +267,25 @@ void GameController::selectEvent_menu(Ref *pSender, Widget::TouchEventType type)
                 
                 if ( _bCalculate ) {
                     CCLOG("得到答案！");
-                    
+                    this->UI_updateWin();
                     
                 }else{
                     CCLOG("提示错误！");
                 }
             }
                 break;
-            case 11:
-            {
-                CCLOG("说明");
-                
-            }
-                break;
             case 12:
             {
                 CCLOG("分享");
+                __Dictionary *content = Dictionary::create();
+                content -> setObject(CCString::create("准了!#德州扑克保险计算App#增加了我的胜率!连胜率100%!下载分享转发,随机赢取ipad! http://www.mbp.com/home/article/lists/category/58.html"), "content");
+                content -> setObject(CCString::create("http://www.mbp.com/pics/oddsshare.jpg"), "image");
+                content -> setObject(CCString::create("亿濠德州保险赔率"), "title");
+                content -> setObject(CCString::create("亿濠德州保险赔率"), "description");
+                content -> setObject(CCString::create("http://www.mbp.com/home/article/lists/category/58.html"), "url");
+                
+                content -> setObject(CCString::createWithFormat("%d", C2DXContentTypeNews), "type");
+                C2DXShareSDK::showShareMenu(NULL, content, Point(100, 100), C2DXMenuArrowDirectionLeft, shareResultHandler);
             }
                 break;
             default:
@@ -298,7 +341,22 @@ void GameController::selectEvent_choose(Ref *pSender, Widget::TouchEventType typ
                     }
                     
                     if ( _iSelectIdx >= _iMax) {
-                        _iSelectIdx --;
+//                        _iSelectIdx--;
+                        return;
+                    }
+                    
+                    if ( _ucCard[ _iUserIdx ][ _iSelectIdx ] != 70 && _ucCard[ _iUserIdx ][ _iSelectIdx ] != 0 ) {
+                        
+                        std::string s2 = StringUtils::format("poker_%d", _choose_button[ _iSelectIdx ]->getTag()) ;
+                        Button *btn1 = (Button *)_panel_choose->getChildByName( s2 );
+                        btn1->setBright( true );
+                        
+                        _choose_button[ _iSelectIdx ]->setVisible( true );
+                        _choose_button[ _iSelectIdx ]->loadTextures( "poker70.png", "","",  TextureResType::PLIST);
+                        _choose_button[ _iSelectIdx ]->setTag( 999 );
+                        
+                        _ucCard[ _iUserIdx ][ _iSelectIdx ] = 10==_iUserIdx?70:0;
+                        
                     }
                     
                     btn->setBright( false );
@@ -329,11 +387,10 @@ void GameController::selectEvent_play(Ref *pSender, Widget::TouchEventType type)
         std::string s = btn->getName();
         _iUserIdx = atoi( s.substr( s.find('_')+1, s.size() ).c_str() );
         _iMax = 10==_iUserIdx?5:2;
-        
+
         //动画
-//        Point pt[5];
         for (int idx = 0; idx < 5; idx++) {
-//            pt[ idx ] = _choose_button[ idx ]->getPosition();
+            
             _choose_button[ idx ]->setTag( 999 );
             _choose_button[ idx ]->loadTextures( "poker70.png", "","",  TextureResType::PLIST);
             
@@ -347,14 +404,6 @@ void GameController::selectEvent_play(Ref *pSender, Widget::TouchEventType type)
                 _choose_button[ idx ]->setVisible( false );
             }
         }
-        
-//        for (int idx = 0; idx < 5; idx++) {
-//            
-//            button[ idx ]->setPosition( pt[2] );
-//            
-//            MoveTo *to = MoveTo::create(2, pt[ idx ] );
-//            button[ idx ]->runAction( to );
-//        }
         
     }
 }

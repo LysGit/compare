@@ -39,6 +39,7 @@ public:
     //UI - update
     void UI_updateInfo();
     void UI_updateInfo(int idx);
+    void UI_updateWin();
     
     //ACT
     void selectEvent_menu(Ref *pSender, Widget::TouchEventType type);

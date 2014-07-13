@@ -11,6 +11,6 @@
 
 #include "cocos2d.h"
 
-extern char sysPlatform[100];
+extern char g_sysPlatform[100];
 
 #endif /* defined(__texasHoldEmTool__GameData__) */

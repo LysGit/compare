@@ -9,4 +9,4 @@
 #include "GameData.h"
 USING_NS_CC;
 
-char sysPlatform[100] = {0};
+char g_sysPlatform[100] = {0};
